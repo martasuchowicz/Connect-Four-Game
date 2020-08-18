@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 200;
+    overflow: hidden;
+    background-image: url(leaves.jpg);
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    background-color: #377375;
+}
+
+.hole {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    /* make a transparent hole : remove background and add huge border + overflow: hidden */
+    position: relative;
+    left: 10px;
+    top: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.player1 .hole {
+    background-color: white;
+    border: 20px solid #a8d8cd;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.player2 .hole {
+    background-color: white;
+    border: 20px solid #ddefe3;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+#board {
+    display: flex; /* put elements on same line */
+    margin: 0 auto;
+    border: 5px solid #377375;
+    border-radius: 15px;
+    width: 710px;
+    box-shadow: 2px 2px 5px grey;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    margin-bottom: 20px;
+    font-family: "Shrikhand", cursive;
+    font-size: 5rem;
+    color: #ddefe3;
+    letter-spacing: 15px;
+}
+#container {
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.reset {
+    width: 900px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #ddefe3;
+    color: #377375;
+    cursor: pointer;
+    text-align: center;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.reset:hover {
+    background-color: #377375;
+    color: white;
+}
+
+#confirm {
+    display: none;
+    background-color: #377375;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    left: 170px;
+    width: 500px;
+    padding: 10px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: larger;
+    box-shadow: 2px 2px 5px grey;
+}
+#confirm button {
+    background-color: #377375;
+    color: white;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bolder;
+    font-size: x-small;
+    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+}
+#confirm .message {
+    text-align: center;
+}
+
+/* #377375  
+#A8D8CD
+#DDEFE3 */
